@@ -1,14 +1,29 @@
-import { NxWelcomeComponent } from './nx-welcome.component';
+import { Component, importProvidersFrom } from '@angular/core';
+import { bootstrapApplication } from '@angular/platform-browser';
 import { RouterModule } from '@angular/router';
-import { Component } from '@angular/core';
 
 @Component({
   standalone: true,
-  imports: [NxWelcomeComponent, RouterModule],
+  template: `<router-outlet />`,
+  imports: [RouterModule],
   selector: 'task-manager-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
-  title = 'task-manager';
+  static bootstrap() {
+    return bootstrapApplication(AppComponent, {
+      providers: [
+        importProvidersFrom(
+          RouterModule.forRoot(
+            [
+              {
+                path: '',
+                loadChildren: () => import('@task-manager/tasks-dashboard').then((m) => m.MYLIB_ROUTES),
+              },
+            ],
+            { initialNavigation: 'enabledBlocking' },
+          ),
+        ),
+      ],
+    }).catch((err) => console.error(err));
+  }
 }
