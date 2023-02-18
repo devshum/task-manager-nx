@@ -14,7 +14,7 @@
           "test",
           "e2e"
         ],
-        "accessToken": "MjEzZWU0NjAtMDc1YS00NmQyLWJmZTctY2I0MmIxOGJjNGVlfHJlYWQtd3JpdGU="
+        "accessToken": "OGU1NzFlZGEtMDY0YS00MTkzLWE2ZWMtMmQ3OTM4ZmUwZGFifHJlYWQtd3JpdGU="
       }
     }
   },
@@ -44,7 +44,8 @@
     "lint": {
       "inputs": [
         "default",
-        "{workspaceRoot}/.eslintrc.json"
+        "{workspaceRoot}/.eslintrc.json",
+        "{workspaceRoot}/.eslintignore"
       ]
     }
   },

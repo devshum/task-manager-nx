@@ -4,8 +4,6 @@
 dist
 tmp
 /out-tsc
-.vscode
-e2e
 
 # dependencies
 node_modules
