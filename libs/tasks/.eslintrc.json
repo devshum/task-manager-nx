@@ -1,5 +1,5 @@
 {
-  "extends": ["../.eslintrc.base.json"],
+  "extends": ["../../.eslintrc.base.json"],
   "ignorePatterns": ["!**/*"],
   "overrides": [
     {
@@ -17,7 +17,7 @@
           "error",
           {
             "type": "element",
-            "prefix": "tm",
+            "prefix": "task-manager",
             "style": "kebab-case"
           }
         ]

@@ -1,2 +1,3 @@
 export * from './lib/tasks/tasks.component';
-export * from './lib/tasks/routes';
+
+export * from './lib/lib.routes';
