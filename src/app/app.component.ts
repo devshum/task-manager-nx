@@ -6,7 +6,7 @@ import { RouterModule } from '@angular/router';
   standalone: true,
   template: `<router-outlet />`,
   imports: [RouterModule],
-  selector: 'task-manager-root',
+  selector: 'tm-root',
 })
 export class AppComponent {
   static bootstrap() {

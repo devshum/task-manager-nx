@@ -20,7 +20,7 @@
           "error",
           {
             "type": "element",
-            "prefix": "task-manager",
+            "prefix": "tm",
             "style": "kebab-case"
           }
         ]
