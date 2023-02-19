@@ -1,7 +1,7 @@
-import { Component, importProvidersFrom } from '@angular/core';
+import { Component } from '@angular/core';
 import { bootstrapApplication } from '@angular/platform-browser';
-import { RouterModule } from '@angular/router';
-
+import { provideRouter, RouterModule } from '@angular/router';
+import { appRoutes } from './app.routes';
 @Component({
   standalone: true,
   template: `<router-outlet />`,
@@ -10,20 +10,8 @@ import { RouterModule } from '@angular/router';
 })
 export class AppComponent {
   static bootstrap() {
-    return bootstrapApplication(AppComponent, {
-      providers: [
-        importProvidersFrom(
-          RouterModule.forRoot(
-            [
-              {
-                path: '',
-                loadChildren: () => import('@task-manager/tasks-dashboard').then((m) => m.MYLIB_ROUTES),
-              },
-            ],
-            { initialNavigation: 'enabledBlocking' },
-          ),
-        ),
-      ],
+    return bootstrapApplication(this, {
+      providers: [provideRouter(appRoutes)],
     }).catch((err) => console.error(err));
   }
 }
