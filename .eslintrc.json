@@ -12,7 +12,7 @@
           "error",
           {
             "type": "attribute",
-            "prefix": "taskManager",
+            "prefix": "tm",
             "style": "camelCase"
           }
         ],

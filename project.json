@@ -3,7 +3,7 @@
   "$schema": "../node_modules/nx/schemas/project-schema.json",
   "projectType": "application",
   "sourceRoot": "./src",
-  "prefix": "task-manager",
+  "prefix": "tm",
   "targets": {
     "build": {
       "executor": "@angular-devkit/build-angular:browser",

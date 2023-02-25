@@ -2,10 +2,10 @@ import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 @Component({
-  selector: 'task-manager-tasks',
+  selector: 'tm-task',
   standalone: true,
   imports: [CommonModule],
-  templateUrl: './tasks.component.html',
-  styleUrls: ['./tasks.component.css'],
+  templateUrl: './task.component.html',
+  styleUrls: ['./task.component.scss'],
 })
-export class TasksComponent {}
+export class TaskComponent {}
