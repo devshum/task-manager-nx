@@ -4,7 +4,7 @@ import { provideRouter, RouterModule } from '@angular/router';
 import { appRoutes } from './app.routes';
 @Component({
   standalone: true,
-  template: `<router-outlet />`,
+  template: `<main><router-outlet /></main>`,
   imports: [RouterModule],
   selector: 'tm-root',
 })

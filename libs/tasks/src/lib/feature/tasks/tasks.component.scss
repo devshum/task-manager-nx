@@ -1,0 +1,78 @@
+@use '../../../../../../src/assets/styles/abstracts/variables' as var;
+
+.tasks-board {
+  position: relative;
+
+  // animation: var.moveTowards 1s;
+
+  box-shadow: var.$box-shadow;
+  border-radius: 3rem;
+  width: 90vw;
+  height: 80vh;
+  padding: 5.6rem 7.8rem;
+
+  background-color: var.$c-white;
+
+  &.slided {
+    margin-top: 9.4rem;
+    box-shadow: unset;
+    
+    transform: scale(0.9);
+    transition: var.$transition;
+  }
+
+  &.non-slided {
+    transition: var.$transition 0.3s;
+  }
+
+  &__wrap {
+    position: relative;
+
+    height: calc(100% - 8.6rem);
+    padding-right: 0.6rem;
+
+    transform: translateY(-2rem);
+    transition: var.$transition;
+
+    &.translated {
+      height: calc(100% - 12.6rem);
+
+      transform: translateY(1rem);
+      transition: var.$transition;
+    }
+
+    &.not-translated {
+      transition: var.$transition 0.2s;
+    }
+  }
+
+  &__task-wrap {
+    display: block;
+
+    &:not(:last-child) {
+      border-bottom: 0.1rem solid var.$c-gray-20;
+    }
+  }
+
+  &__message {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: calc(100% - 16rem);
+  }
+
+  &__message-content {
+    font-size: 2.4rem;
+
+    span {
+      font-weight: bold;
+      color: var.$c-purple-20;
+    }
+  }
+}
