@@ -1,7 +1,7 @@
-# tasks
+# tasks-feature
 
 This library was generated with [Nx](https://nx.dev).
 
 ## Running unit tests
 
-Run `nx test tasks` to execute the unit tests.
+Run `nx test tasks-feature` to execute the unit tests.

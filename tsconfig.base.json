@@ -15,7 +15,8 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@task-manager/tasks": ["libs/tasks/src/index.ts"]
+      "@task-manager/tasks/feature": ["libs/tasks/feature/src/index.ts"],
+      "@task-manager/tasks/ui/task": ["libs/tasks/ui/task/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

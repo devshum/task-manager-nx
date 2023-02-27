@@ -1,5 +1,9 @@
 @use '../../../../../../src/assets/styles/abstracts/variables' as var;
 
+:host {
+  display: block;
+}
+
 .tasks-board {
   position: relative;
 
@@ -16,7 +20,7 @@
   &.slided {
     margin-top: 9.4rem;
     box-shadow: unset;
-    
+
     transform: scale(0.9);
     transition: var.$transition;
   }
