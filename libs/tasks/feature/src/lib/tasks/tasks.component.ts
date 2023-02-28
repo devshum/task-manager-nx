@@ -1,5 +1,6 @@
-import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
+import { injectAppConfig } from '@task-manager/shared/config';
 
 @Component({
   selector: 'wt-feature',
@@ -9,4 +10,11 @@ import { CommonModule } from '@angular/common';
   styleUrls: ['./tasks.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class TasksComponent {}
+export class TasksComponent implements OnInit {
+  readonly config = injectAppConfig();
+
+  ngOnInit() {
+    // TODO move to facade
+    console.log(this.config);
+  }
+}
