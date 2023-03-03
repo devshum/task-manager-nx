@@ -13,6 +13,7 @@ import { appRoutes } from './app.routes';
   imports: [RouterModule],
   selector: 'tm-root',
 })
+//  TODO move appRoutes to a shell lib
 export class AppComponent {
   static bootstrap(config: AppConfig) {
     return bootstrapApplication(this, {
