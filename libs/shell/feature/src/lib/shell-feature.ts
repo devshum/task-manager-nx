@@ -1,6 +1,6 @@
 import { Route } from '@angular/router';
 
-export const appRoutes: Route[] = [
+export const shellRoutes: Route[] = [
   {
     path: 'tasks',
     loadChildren: async () => (await import('@task-manager/tasks/feature')).tasksRoutes,

@@ -17,6 +17,7 @@
     "paths": {
       "@task-manager/providers/http": ["libs/providers/http/src/index.ts"],
       "@task-manager/shared/config": ["libs/shared/config/src/index.ts"],
+      "@task-manager/shell/feature": ["libs/shell/feature/src/index.ts"],
       "@task-manager/tasks/feature": ["libs/tasks/feature/src/index.ts"],
       "@task-manager/tasks/ui/task": ["libs/tasks/ui/task/src/index.ts"]
     }
