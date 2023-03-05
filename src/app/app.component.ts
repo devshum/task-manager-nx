@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { bootstrapApplication } from '@angular/platform-browser';
 import { provideRouter, RouterModule } from '@angular/router';
-import { AppConfig, provideAppConfig } from '@task-manager/shared/config';
+import { AppConfig, provideAppConfig } from '@task-manager/config/feature';
 import { shellRoutes } from '@task-manager/shell/feature';
 @Component({
   standalone: true,
@@ -13,7 +13,6 @@ import { shellRoutes } from '@task-manager/shell/feature';
   imports: [RouterModule],
   selector: 'tm-root',
 })
-
 export class AppComponent {
   static bootstrap(config: AppConfig) {
     return bootstrapApplication(this, {

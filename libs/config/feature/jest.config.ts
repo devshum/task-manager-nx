@@ -1,6 +1,6 @@
 /* eslint-disable */
 export default {
-  displayName: 'config.di',
+  displayName: 'config-feature',
   preset: '../../../jest.preset.js',
   globals: {
     'ts-jest': {
@@ -8,9 +8,8 @@ export default {
     },
   },
   transform: {
-    '^.+\\.(ts|mjs|js|html)$': 'jest-preset-angular',
+    '^.+\\.[tj]s$': 'ts-jest',
   },
-  transformIgnorePatterns: ['node_modules/(?!.*\\.mjs$)'],
   moduleFileExtensions: ['ts', 'js', 'html'],
-  coverageDirectory: '../../../coverage/libs/shared/config',
+  coverageDirectory: '../../../coverage/libs/config/feature',
 };

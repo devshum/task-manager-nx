@@ -1,4 +1,4 @@
-import { APP_CONFIG, provideAppConfig } from './config.di';
+import { APP_CONFIG, provideAppConfig } from './config-feature';
 
 describe('config', () => {
   it('should return a provider with the given AppConfig', () => {

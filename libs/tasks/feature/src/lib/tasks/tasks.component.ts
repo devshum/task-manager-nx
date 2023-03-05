@@ -1,6 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
-import { injectAppConfig } from '@task-manager/shared/config';
+import { injectAppConfig } from '@task-manager/config/feature';
 
 @Component({
   selector: 'wt-feature',
