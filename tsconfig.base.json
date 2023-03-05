@@ -16,7 +16,7 @@
     "baseUrl": ".",
     "paths": {
       "@task-manager/config/feature": ["libs/config/feature/src/index.ts"],
-      "@task-manager/providers/http": ["libs/providers/http/src/index.ts"],
+      "@task-manager/providers/feature": ["libs/providers/feature/src/index.ts"],
       "@task-manager/shared/feature/config": ["libs/shared/feature/config/src/index.ts"],
       "@task-manager/shell/feature": ["libs/shell/feature/src/index.ts"],
       "@task-manager/tasks/feature": ["libs/tasks/feature/src/index.ts"],

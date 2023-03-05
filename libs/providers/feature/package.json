@@ -1,5 +1,5 @@
 {
-  "name": "@task-manager/providers/http",
+  "name": "@task-manager/providers/feature",
   "version": "0.0.1",
   "type": "commonjs"
 }

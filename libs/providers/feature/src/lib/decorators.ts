@@ -1,5 +1,5 @@
 
-import { HttpProvider } from './providers-http';
+import { HttpProvider } from '../../../http/src/lib/providers-http';
 import { methodBuilder, paramBuilder } from './utils';
 
 /************************
