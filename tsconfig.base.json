@@ -15,6 +15,7 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@task-manager/config/data-access": ["libs/config/data-access/src/index.ts"],
       "@task-manager/config/feature": ["libs/config/feature/src/index.ts"],
       "@task-manager/providers/feature": ["libs/providers/feature/src/index.ts"],
       "@task-manager/shared/feature/config": ["libs/shared/feature/config/src/index.ts"],

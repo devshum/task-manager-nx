@@ -1,5 +1,5 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-import { APP_CONFIG } from '@task-manager/shared/config';
+import { APP_CONFIG } from '@task-manager/config/feature';
 
 import { TasksComponent } from './tasks.component';
 
@@ -10,7 +10,7 @@ describe('FeatureComponent', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       imports: [TasksComponent],
-      providers: [{ provide: APP_CONFIG, useValue: 'test config' }]
+      providers: [{ provide: APP_CONFIG, useValue: 'test config' }],
     }).compileComponents();
 
     fixture = TestBed.createComponent(TasksComponent);
